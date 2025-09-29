@@ -1,4 +1,4 @@
-# Dr. Cassandra — Your Diagnostic and Remediation Action Plan
+# Dr. Cassandra — Your Single Plane for Diagnostic and Remediation of Livesite for  Apache Cassandra
 
 **Faster incident resolution. Better customer experience. One-stop Cassandra diagnostics.**
 
