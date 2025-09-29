@@ -7,6 +7,14 @@ Dr. Cassandra is a live site manager for Apache Cassandra built on the Model Con
 
 The agent discovers tools/resources dynamically via MCP and can call multiple tools in sequence to investigate issues and produce actionable guidance.
 
+## Demo Video
+
+[![Dr. Cassandra Demo](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube)](./assets/cassandra_doctor_demo.mov)
+
+**Or click here:** [./assets/cassandradoctodmeo.mov](./assets/cassandra_doctor_demomov)
+
+*Watch Dr. Cassandra in action - setting up the MCP server, asking cluster health questions, and demonstrating the multi-tool investigation workflow.*
+
 ## Tech Stack
 
 - FastAPI (Python) — web server for chat UI and API
