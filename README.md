@@ -9,11 +9,15 @@ The agent discovers tools/resources dynamically via MCP and can call multiple to
 
 ## Demo Video
 
+> **🎬 Click to watch the full demo video**
+
 [![Dr. Cassandra Demo](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube)](./assets/cassandra_doctor_demo.mov)
 
-**Or click here:** [./assets/cassandradoctodmeo.mov](./assets/cassandra_doctor_demomov)
+**Direct link:** [cassandra_doctor_demo.mov](./assets/cassandra_doctor_demo.mov)
 
 *Watch Dr. Cassandra in action - setting up the MCP server, asking cluster health questions, and demonstrating the multi-tool investigation workflow.*
+
+**Note:** The video will open in a new tab/window when clicked. For the best viewing experience, download the video file to your device.
 
 ## Tech Stack
 
