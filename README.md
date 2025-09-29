@@ -1,11 +1,73 @@
-# Dr. Cassandra — Agentic Web (MCP Chat + Server)
+# Dr. Cassandra — Your Diagnostic and Remediation Action Plan
 
-Dr. Cassandra is a live site manager for Apache Cassandra built on the Model Context Protocol (MCP). It pairs:
+**Faster incident resolution. Better customer experience. One-stop Cassandra diagnostics.**
 
-- A FastAPI web chat client that connects to an MCP server
-- An MCP server exposing Cassandra-like inventory, metrics, logs, and control tools (mocked for demo)
+## Problem Statement
 
-The agent discovers tools/resources dynamically via MCP and can call multiple tools in sequence to investigate issues and produce actionable guidance.
+**Apache Cassandra is a distributed NoSQL database that presents unique operational challenges:**
+
+### Cassandra's Distributed Nature
+- **Multi-Node Architecture**: Data distributed across multiple nodes in a cluster
+- **Replication Strategy**: Data replicated across different data centers and racks
+- **Consistency Levels**: Tunable consistency vs. availability trade-offs
+- **Gossip Protocol**: Peer-to-peer communication for cluster membership and health
+- **Anti-Entropy**: Background repair processes to maintain data consistency
+- **Compaction**: Continuous background processes to optimize storage and performance
+
+### Current Cassandra incident response is fragmented and inefficient:
+
+### Diagnostic Challenges
+- 🔍 **Scattered Tools**: Multiple monitoring tools, each with different interfaces and data formats
+- ⏱️ **Manual Correlation**: Engineers spend hours manually connecting symptoms across metrics, logs, and topology
+- 🔗 **Missing Context**: Critical relationships between symptoms and root causes are often overlooked
+- 📊 **Data Silos**: Information exists in separate systems without unified correlation
+- 🌐 **Distributed Complexity**: Issues can span multiple nodes, data centers, and replication factors
+- ⚖️ **Consistency vs Availability**: Balancing CAP theorem trade-offs during incidents
+- 🔄 **Gossip & Anti-Entropy**: Understanding cluster membership and repair status across nodes
+
+### Remediation Challenges  
+- 📋 **Disconnected Action Plans**: Remediation steps exist in separate runbooks, wikis, or tribal knowledge
+- 🎯 **Generic Solutions**: One-size-fits-all approaches that don't account for specific cluster states
+- ⚡ **Slow Response**: Time lost switching between diagnostic tools and hunting for relevant solutions
+- 🚨 **High MTTR**: Mean Time To Resolution remains high due to fragmented workflows
+- 🏗️ **Distributed Remediation**: Coordinating fixes across multiple nodes and data centers
+- ⚙️ **Configuration Complexity**: Managing keyspace, table, and node-level settings during incidents
+- 🔧 **Safe Operations**: Ensuring repairs, compactions, and node operations don't cause cascading failures
+
+### Business Impact
+- **Customer Experience**: Extended downtime affects user satisfaction
+- **Engineering Productivity**: Teams spend more time on incident response than feature development
+- **Operational Costs**: Manual processes are expensive and error-prone
+
+## Solution Statement
+
+**Dr. Cassandra provides an integrated diagnostic and remediation platform that unifies the entire incident response workflow:**
+
+### Unified Diagnostic Engine
+- **Single Interface**: One platform orchestrating all diagnostic tools and data sources
+- **Intelligent Correlation**: AI automatically identifies relationships between symptoms, metrics, logs, and topology
+- **Contextual Analysis**: Real-time correlation across multiple data dimensions
+- **Automated Discovery**: Dynamic tool discovery and integration via MCP protocol
+- **Distributed Awareness**: Understanding cluster topology, replication factors, and data center distribution
+- **Gossip & Membership**: Real-time cluster health and node status monitoring
+- **Consistency Analysis**: Evaluating CAP theorem implications for specific operations
+
+### Integrated Remediation System
+- **Context-Aware Action Plans**: Remediation steps generated directly from diagnostic findings
+- **Tailored Guidance**: Step-by-step instructions specific to your cluster's current state
+- **Multi-Tool Orchestration**: Seamless execution across diagnostic and control tools
+- **Progressive Enhancement**: Plans that adapt as new diagnostic information becomes available
+- **Distributed Coordination**: Safe execution of repairs, compactions, and node operations across the cluster
+- **Configuration Management**: Intelligent keyspace and table-level setting adjustments
+- **Risk Assessment**: Evaluating impact of operations before execution to prevent cascading failures
+
+### Business Benefits
+- **Faster MTTR**: Reduce incident resolution time from hours to minutes
+- **Improved Reliability**: Proactive issue detection and automated remediation
+- **Enhanced Productivity**: Engineers focus on strategic work, not manual correlation
+- **Better Customer Experience**: Reduced downtime and faster issue resolution
+
+The system pairs a FastAPI web interface with an MCP server that exposes Cassandra inventory, metrics, logs, and control tools. The AI agent discovers capabilities dynamically and orchestrates multiple diagnostic tools in sequence to provide comprehensive incident analysis and remediation guidance.
 
 ## Demo Video
 
