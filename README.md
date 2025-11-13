@@ -2,7 +2,7 @@
 
 **Faster incident resolution. Better customer experience. One-stop Cassandra diagnostics.**
 ## DEMO
-[![Demo](./assets/demo_thumbnail.png)](./assets/cassandra_doctor_demo.mp4)
+[![Watch the video](https://img.youtube.com/vi/KN2ocMOKX5A/0.jpg)](https://www.youtube.com/watch?v=<VIDEO_ID)
 
 ## Problem Statement
 
