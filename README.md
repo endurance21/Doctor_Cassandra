@@ -1,6 +1,8 @@
 # Dr. Cassandra — Your Single Plane for Diagnostic and Remediation of Livesite for  Apache Cassandra
 
 **Faster incident resolution. Better customer experience. One-stop Cassandra diagnostics.**
+## DEMO
+[![Demo](./assets/demo_thumbnail.png)](./assets/cassandra_doctor_demo.mp4)
 
 ## Problem Statement
 
